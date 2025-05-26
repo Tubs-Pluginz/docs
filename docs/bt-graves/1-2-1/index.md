@@ -1,5 +1,4 @@
 ---
-layout: doc # Or your preferred layout for plugin intro pages
 title: BT Graves - Introduction
 ---
 

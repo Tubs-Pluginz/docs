@@ -26,6 +26,11 @@ features:
     details: A Spigot/Paper plugin to create player graves on death, saving items and XP.
     link: /bt-graves/latest/ 
     linkText: Learn More
+  - icon: ⚔️
+    title: BT's CombatLogger
+    details: Punishes players for logging out during PvP combat.
+    link: /combatlogger/latest/ 
+    linkText: Learn More
   - icon: 🧩
     title: More Plugins Coming Soon!
     details: I'm always working on useless plugins to improve my Minecraft server experience. And sometimes i think it should be public so. Stay tuned for more plugins!

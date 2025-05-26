@@ -153,7 +153,7 @@ When asking for support, please provide as much of the following information as 
 *   **VelocityPteroPower Version:** (e.g., `0.9.4`)
 *   **Velocity Version:** (e.g., `3.3.0-SNAPSHOT (git-...)` - get from `/velocity version`)
 *   **Panel Type & Version:** (e.g., Pterodactyl 1.11.5, Pelican 0.8.2)
-*   **Java Version:** (Output of `java -version` where Velocity runs)
+*   **Java Version:**
 *   **Your `config.yml`:**
     ::: danger Mask API Key!
     Before sharing your `config.yml`, **ALWAYS MASK YOUR `apiKey`** like this:

@@ -22,6 +22,10 @@ const pluginConfigs = {
   'BT Graves': {
     basePath: 'bt-graves',
     latest: '1.2.1'
+  },
+  'BTs CombatLogger': {
+    basePath: 'combatlogger',
+    latest: '1.1'
   }
 };
 

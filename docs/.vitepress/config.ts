@@ -31,11 +31,27 @@ const pluginConfigs: Record<string, PluginVersionConfig> = {
       { text: 'Troubleshooting', link: '/troubleshooting' },
     ],
   },
-  'BT Graves': { // New entry for BTGraves
+  'BT Graves': {
     label: 'BT Graves',
     basePath: 'bt-graves',
     latest: '1.2.1',
-    versions: ['1.2.1'], // Add older versions here if you document them
+    versions: ['1.2.1'],
+    sidebarItems: [
+      { text: 'Introduction', link: '/' },
+      { text: 'Installation', link: '/installation' },
+      { text: 'Configuration', link: '/configuration' },
+      { text: 'Core Mechanics', link: '/core-mechanics' },
+      { text: 'Commands', link: '/commands' },
+      { text: 'Permissions', link: '/permissions' },
+      { text: 'FAQ', link: '/faq' },
+      { text: 'Troubleshooting', link: '/troubleshooting' },
+    ],
+  },
+  'BTs CombatLogger': {
+    label: "BT's CombatLogger",
+    basePath: 'combatlogger',
+    latest: '1.1',
+    versions: ['1.1'],
     sidebarItems: [
       { text: 'Introduction', link: '/' },
       { text: 'Installation', link: '/installation' },

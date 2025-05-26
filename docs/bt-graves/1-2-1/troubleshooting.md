@@ -95,7 +95,7 @@ When asking for support, please provide:
 
 *   **BTGraves Version:** (e.g., `1.2.1`)
 *   **Server Software & Version:** (e.g., Paper 1.19.4, Spigot 1.18.2)
-*   **Java Version:** (Output of `java -version` in your server's terminal)
+*   **Java Version:** 
 *   **Your `config.yml` for BTGraves.**
 *   **(If relevant) A snippet of your `graves.yml` for a problematic grave.**
 *   **Detailed Console Logs:** Copy relevant sections from your server console (e.g., `logs/latest.log`) when the issue occurs. Use a service like [Pastebin](https://pastebin.com/), [Hastebin](https://hastebin.com/), or [mclo.gs](https://mclo.gs/). **Do not paste long logs directly into Discord.**
