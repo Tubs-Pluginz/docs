@@ -47,8 +47,8 @@ See the [Troubleshooting Guide](./troubleshooting.md) for more.
 **Q: Can other players access my grave?**
 <details>
   <summary>Click to expand details</summary>
-  *   **By default, no.** Only the player who died (the owner of the grave) can open their grave by right-clicking its armor stand.
-  *   **Admins:** Players with the `btgraves.admin.open` permission can use the `/grave open <graveId>` command to open any grave if they know its ID.
+  -   **By default, no.** Only the player who died (the owner of the grave) can open their grave by right-clicking its armor stand. <br>
+  -   **Admins:** Players with the `btgraves.admin.open` permission can use the `/grave open < graveId>` command to open any grave if they know its ID.
 </details>
 
 **Q: What if the server crashes or restarts while graves are active?**
