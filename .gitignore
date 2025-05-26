@@ -1,4 +1,4 @@
 /docs/.vitepress/cache/
 /docs/node_modules/
 /docs/*/latest/
-/docs/dist/*
+/dist/*
