@@ -1,0 +1,13 @@
+{
+  "type": "module",
+  "devDependencies": {
+    "vitepress": "^1.6.3"
+  },
+  "scripts": {
+    "update-latest": "node docs/scripts/update-latest-links.js",
+    "docs:dev": "npm run update-latest && vitepress dev docs",
+    "docs:build": "npm run update-latest && vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+
+  }
+}
