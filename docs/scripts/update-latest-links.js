@@ -18,6 +18,10 @@ const pluginConfigs = {
   'VelocityPteroPower': {
     basePath: 'VelocityPteroPower',
     latest: '0.9.4'
+  },
+  'BT Graves': {
+    basePath: 'bt-graves',
+    latest: '1.2.1'
   }
 };
 
