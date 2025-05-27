@@ -6,35 +6,32 @@
 
 # VelocityPteroPower ⚡️
 
-![Static Badge](https://img.shields.io/badge/Velocity-green)
-[![forthebadge](https://forthebadge.com/images/badges/works-on-my-machine.svg)](https://forthebadge.com)
-
-<a href="https://www.buymeacoffee.com/tubyoub" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
-
 <p align="center">
     <a href="https://discord.pluginz.dev">
         <img src="https://i.imgur.com/JgDt1Fl.png" width="300" alt="Discord Invite">
     </a>
     <br>
     <i>Please join the Discord if you have questions!</i>
+    <br>
+     <i>Developed by TubYoub</i>
 </p>
 
 Welcome to the official documentation for **VelocityPteroPower (VPP)**!
 
-VPP is a powerful Velocity proxy plugin designed to seamlessly integrate your Minecraft servers managed by the [Pterodactyl](https://pterodactyl.io/) or [Pelican](https://pelican.dev/) Server Panel. It provides dynamic control over your servers, enabling automatic startup when players connect and intelligent shutdown of idle instances, optimizing your server resources and player experience.
+VPP is a powerful Velocity proxy plugin designed to seamlessly integrate your Minecraft servers managed by the [Pterodactyl](https://pterodactyl.io/), [Pelican](https://pelican.dev/) or [Mc Server Soft](https://mcserversoft.com/) Panel. It provides dynamic control over your servers, enabling automatic startup when players connect and intelligent shutdown of idle instances, optimizing your server resources and player experience.
 
-This project is a port of the popular [BungeePteroPower](https://github.com/Kamesuta/BungeePteroPower) plugin, bringing its robust functionality to the Velocity proxy platform.
+This project is a port of the popular [BungeePteroPower](https://github.com/Kamesuta/BungeePteroPower) plugin, bringing its functionality to the Velocity proxy platform.
 
 ::: tip What can VPP do for you?
 VPP automates the tedious parts of managing a dynamic server network, such as starting servers on demand and stopping them when they're not in use. This saves server resources and provides a smoother, more responsive experience for your players.
 :::
 
-## Key Features ✨
+## Key Features
 
 *   **🚀 Dynamic Server Management:** Automatically starts backend Minecraft servers when players attempt to connect to them.
-*   **💤 Idle Server Shutdown:** Intelligently configures servers to automatically shut down when they are empty for a specified period, conserving valuable server resources.
+*   **💤 Idle Server Shutdown:** Configures servers to automatically shut down when they are empty for a specified period, conserving valuable server resources.
 *   **🔧 Manual Control:** Provides administrators with in-game commands to manually start, stop, and restart managed servers.
-*   **🚦 Rate Limit Handling:** Respects the panel API's rate limits to prevent issues and ensure stable communication with your Pterodactyl/Pelican panel.
+*   **🚦 Rate Limit Handling:** Respects the panel API's rate limits to prevent issues and ensure stable communication with your panel.
 *   **🏝️ Forced Host Redirection:** Players connecting through forced hosts to an offline server can be temporarily redirected to a configured "limbo" server while their target server starts up.
 *   **✅ Whitelist Integration:** Optionally fetches and enforces server whitelists directly from the panel for managed servers.
     ::: warning MC Server Soft Limitation

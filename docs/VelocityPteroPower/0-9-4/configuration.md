@@ -22,7 +22,7 @@ This guide explains each configuration option available.
 *   **Default:** (Automatically set by the plugin, e.g., `8`)
 
 ### `checkUpdate`
-*   **Description:** If `true`, the plugin will check for new versions of VelocityPteroPower on startup. If an update is found, a message will be displayed in the console and to players with the `ptero.reload` permission.
+*   **Description:** If `true`, the plugin will check for new versions of VelocityPteroPower on startup. If an update is found, a message will be displayed in the console.
 *   **Type:** `Boolean`
 *   **Default:** `true`
 *   **Example:** `checkUpdate: true`
@@ -31,7 +31,7 @@ This guide explains each configuration option available.
 *   **Description:** Controls the verbosity of messages logged by VelocityPteroPower to the Velocity console.
 *   **Type:** `Integer`
 *   **Accepted Values:**
-    *   `10`: DEBUG (Most detailed information, useful for troubleshooting complex issues)
+    *   `10`: DEBUG (Most detailed information, useful for troubleshooting issues)
     *   `20`: INFO (Standard operational messages, recommended for production)
     *   `30`: WARNING (Potential issues or non-critical errors)
     *   `40`: ERROR (Critical errors that may impair functionality)
@@ -65,7 +65,7 @@ This guide explains each configuration option available.
     *   `"VELOCITY_PING"`: Uses Velocity's built-in server pinging mechanism.
         *   **Pros:** Less resource-intensive on the panel API; doesn't consume API rate limit quotas.
         *   **Cons:** Requires the server to be correctly registered in `velocity.toml` and network-accessible from the proxy. Might report a server as "online" slightly before it's fully joinable (e.g., before all backend plugins load). Some very minimal limbo servers might not respond to pings correctly.
-    *   `"PANEL_API"`: Directly queries the Pterodactyl/Pelican panel API for the server's current state (e.g., "running", "offline").
+    *   `"PANEL_API"`: Directly queries the Pterodactyl/Pelican/MC Server Soft panel API for the server's current state (e.g., "running", "offline").
         *   **Pros:** Generally more accurate regarding the *actual* state of the server process as reported by the panel.
         *   **Cons:** Uses an API request for each check, contributing to rate limit usage. Can be slightly slower due to API call latency.
 *   **Default:** `"VELOCITY_PING"`
@@ -97,7 +97,7 @@ This guide explains each configuration option available.
 *   **Example:** `idleStartShutdownTime: 300`
 
 ### `playerStartCooldown`
-*   **Description:** The cooldown period (in seconds) a player must wait before they can initiate the start of another server (either by attempting to connect to an offline server or by using the `/ptero start` command).
+*   **Description:** The cooldown period (in seconds) a player must wait before they can initiate the start of another server, does not work for the `/ptero start` command.
 *   **Type:** `Integer` (seconds)
 *   **Default:** `10`
 *   **Example:** `playerStartCooldown: 10`
@@ -129,8 +129,9 @@ This guide explains each configuration option available.
 *   **Example:**
     ```yaml
     stopIdleIgnore:
-      - mainLobby
-      - creativeHub
+      - lobby1
+      - lobby2
+      - hub
     ```
     ::: warning Important
     This list **only** affects the `/ptero stopidle` command. It does **not** prevent automatic shutdown based on a server's `timeout` setting or the global `idleStartShutdownTime`. It also does not affect the `/ptero forcestopall` command.
@@ -168,11 +169,13 @@ This guide explains each configuration option available.
 ---
 
 ## Panel Connection (`pterodactyl`)
-
-This section contains the crucial details for connecting to your Pterodactyl or Pelican panel.
+::: info
+This section of the config is still named `pterodactyl` for compatibility reasons, even if you are using Pelican or MC Server Soft. The plugin will automatically detect the panel type based on the API key format.
+:::
+This section contains the crucial details for connecting to your panel url.
 
 ### `pterodactyl.url`
-*   **Description:** The full base URL of your Pterodactyl or Pelican panel.
+*   **Description:** The full base URL of your panel.
 *   **Type:** `String`
 *   **Required:** Yes
 *   **Format:** Must include the protocol (`http://` or `https://`). It's generally recommended to ensure it ends with a `/` if your panel requires it for API access (most do).
@@ -192,6 +195,8 @@ This section contains the crucial details for connecting to your Pterodactyl or 
 *   **Example:** `apiKey: "ptlc_YOUR_CLIENT_API_KEY_HERE"`
     ::: danger Critical: Use Client API Keys Only!
     You **must** use a **Client API Key**. Application API Keys (which might start with `ptla_` for Pterodactyl or `peli_` for Pelican) are **NOT supported** by VPP and will result in connection failures. The Client API Key grants permissions on behalf of your user account.
+    ::: info Information for MC Server Soft Users
+    Mc Server Soft doesnt have any kind of distinction between types of Api Keys. There is just one type.
     :::
 
 ---
