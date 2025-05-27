@@ -48,9 +48,10 @@ These permissions grant access to specific `/ptero` (or `/vpp`) sub-commands:
 *   `ptero.bypass`
     *   **Allows:** If `whitelistAllowBypass: true` is set in `config.yml`, players with this permission can bypass VPP's internal whitelist check when attempting to connect to a server that has `whitelist: true` in its per-server configuration.
     *   **Purpose:** Useful for administrators or testers who need to access servers without being on the formal `whitelist.json`, while still having VPP manage the server's startup.
-    *   ::: important Backend Whitelist Still Applies
-        Granting `ptero.bypass` **only** bypasses VPP's preliminary check. The actual Minecraft server (`spigot.yml`, `server.properties`, or `whitelist.json` on the backend) will still enforce its own whitelist. If a player with `ptero.bypass` is not on the backend server's whitelist, they will be able to *trigger the server start* via VPP but will still be denied entry by the Minecraft server itself.
-        :::
+    <br>
+::: danger Backend Whitelist Still Applies
+Granting `ptero.bypass` **only** bypasses VPP's preliminary check. The actual Minecraft server (`spigot.yml`, `server.properties`, or `whitelist.json` on the backend) will still enforce its own whitelist. If a player with `ptero.bypass` is not on the backend server's whitelist, they will be able to *trigger the server start* via VPP but will still be denied entry by the Minecraft server itself.
+:::
 
 ::: tip Best Practices
 *   Grant permissions sparingly and only to users or groups that absolutely need them.

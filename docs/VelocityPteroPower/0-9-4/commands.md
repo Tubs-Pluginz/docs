@@ -86,13 +86,13 @@ Remember that server names used in commands must exactly match how they are defi
 *   **Description:** Reloads VPP's `config.yml` and `messages.yml` files. This allows most configuration changes to be applied without a full Velocity proxy restart.
 *   **Permission:** `ptero.reload`
 *   **Notes:**
-    *   Some settings, like `apiThreads`, may still necessitate a full proxy restart to take effect.
+    *   Some settings, like `apiThreads`, will still need a full proxy restart to take effect.
     *   The panel API client will be re-initialized if `pterodactyl.url`, `pterodactyl.apiKey`, or the detected panel type changes upon reload.
 
 ### `/ptero help`
 *   **Alias:** `/vpp help`
 *   **Description:** Displays a summary of available VPP commands and their basic usage.
-*   **Permission:** None required by default (check your permissions plugin if customized).
+*   **Permission:** None required by default.
 
 
 ::: info

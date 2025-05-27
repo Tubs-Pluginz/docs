@@ -9,7 +9,6 @@ This guide provides steps to help you diagnose and resolve common issues with Ve
 
 *   **Latest VPP Version:** Ensure you are running the latest stable release of VelocityPteroPower. Check the [Modrinth Page](https://modrinth.com/plugin/velocitypteropower) or use the in-plugin update checker (if `checkUpdate: true` in `config.yml`).
 *   **Velocity Version:** Confirm your Velocity proxy version is compatible. VPP is generally built against recent Velocity API versions.
-*   **Java Version:** As per `pom.xml` for VPP `0.9.4`, **Java 21 or higher** is required for the Velocity proxy running VPP. Verify with `java -version`.
 
 ## 2. Enable Debug Logging 📝
 

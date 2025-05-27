@@ -15,9 +15,8 @@ Refer to the [Troubleshooting Guide](troubleshooting.md) for more detailed steps
 
 ## General & Startup
 
-**Q: My server isn't starting automatically when a player tries to connect. What should I check?**
 <details>
-  <summary>Click to expand details</summary>
+  <summary><b>Q: My server isn't starting automatically when a player tries to connect. What should I check?</b></summary>
 
   *   **VPP Configuration (`config.yml`):**
       *   Is the server name under `servers:` an **exact match** (case-sensitive) to the name in your `velocity.toml`?
@@ -40,25 +39,22 @@ Refer to the [Troubleshooting Guide](troubleshooting.md) for more detailed steps
       *   Remember, whitelist fetching is not supported for MC Server Soft.
 </details>
 
-**Q: What's the difference between `timeout` (per-server) and `idleStartShutdownTime` (global)?**
 <details>
-  <summary>Click to expand details</summary>
+  <summary><b>Q: What's the difference between `timeout` (per-server) and `idleStartShutdownTime` (global)?</b></summary>
 
   *   **`timeout`:** This setting is configured *per-server* in the `servers:` section. It applies when an **active server (that had players)** becomes empty. The countdown for shutdown begins after the last player leaves.
   *   **`idleStartShutdownTime`:** This is a *global* setting. It applies if a server is **started by VPP** (e.g., due to a player connection attempt or a command) but **no player successfully joins it** within this specified duration. It's a safeguard to shut down servers that were initiated but never actually used.
 </details>
 
-**Q: Why does it sometimes take a moment for me to connect to a server after VPP starts it?**
 <details>
-  <summary>Click to expand details</summary>
+  <summary><b>Q: Why does it sometimes take a moment for me to connect to a server after VPP starts it?</b></summary>
   This is likely due to the `startupJoinDelay` setting, configured per-server in `config.yml`. This delay is intentionally added *after* VPP detects the server as "online" (via `serverStatusCheckMethod`). It gives the backend Minecraft server and its plugins additional time to fully initialize and load before VPP attempts to transfer the player. Without this, players might be connected too early, before the server is truly ready to accept them.
 </details>
 
 ## Shutdown Issues
 
-**Q: Servers aren't stopping automatically when they become empty.**
 <details>
-  <summary>Click to expand details</summary>
+  <summary><b>Q: Servers aren't stopping automatically when they become empty.</b></summary>
 
   *   **`timeout` Setting:** For the specific server in `config.yml`, is `timeout:` set to a positive number (seconds)?
       *   If `timeout: -1`, automatic shutdown for that server is disabled.
@@ -74,9 +70,8 @@ Refer to the [Troubleshooting Guide](troubleshooting.md) for more detailed steps
 
 ## Limbo Server
 
-**Q: The limbo server feature isn't working as expected.**
 <details>
-  <summary>Click to expand details</summary>
+  <summary><b>Q: The limbo server feature isn't working as expected.</b></summary>
 
   *   **Configuration (`config.yml`):**
       *   Is `limboServer:` set to the **exact name** of a server that is registered in your `velocity.toml`?
@@ -89,9 +84,8 @@ Refer to the [Troubleshooting Guide](troubleshooting.md) for more detailed steps
 
 ## API & Whitelist
 
-**Q: I'm getting "API rate limit exceeded" messages in the console.**
 <details>
-  <summary>Click to expand details</summary>
+  <summary><b>Q: I'm getting "API rate limit exceeded" messages in the console.</b></summary>
 
   *   **Enable `printRateLimit: true`** in `config.yml`. This will show you the rate limit values VPP receives from your panel, helping confirm if this is the issue.
   *   **Other API Consumers:** Are other plugins, scripts, or services also making frequent requests to your panel API? This can contribute to hitting the limit.
@@ -99,9 +93,8 @@ Refer to the [Troubleshooting Guide](troubleshooting.md) for more detailed steps
   *   **Panel Documentation:** Consult your panel's documentation to understand its specific API rate limits and how they are applied.
 </details>
 
-**Q: The whitelist feature isn't working, or `/ptero whitelistReload` does nothing/shows errors.**
 <details>
-  <summary>Click to expand details</summary>
+  <summary><b>Q: The whitelist feature isn't working, or `/ptero whitelistReload` does nothing/shows errors.</b></summary>
 
   *   **Server Configuration (`config.yml`):** Is `whitelist: true` set for the specific server(s) in the `servers:` section?
   *   ::: danger MC Server Soft Incompatibility
@@ -116,9 +109,8 @@ Refer to the [Troubleshooting Guide](troubleshooting.md) for more detailed steps
   *   **`whitelistCheckInterval`:** If you expect periodic updates, ensure this is set to a positive value (minutes).
 </details>
 
-**Q: Can VPP manage game servers hosted on different Pterodactyl/Pelican Nodes (Wings/Daemon machines)? What about different Panel installations?**
 <details>
-  <summary>Click to expand details</summary>
+  <summary><b>Q: Can VPP manage game servers hosted on different Pterodactyl/Pelican Nodes (Wings/Daemon machines)? What about different Panel installations?</b></summary>
 
    *  **Multiple Nodes (Wings/Daemon) under a Single Panel: YES** VelocityPteroPower connects to one specific Panel installation (defined by the pterodactyl.url in config.yml). This single Panel installation can (and typically does) manage game servers running on many different physical or virtual machines, which are known as Nodes (running the Pterodactyl Wings or Pelican Daemon software). VPP can manage any game server that is registered under that one Panel, regardless of which Node it's hosted on.
 
