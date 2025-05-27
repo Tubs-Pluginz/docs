@@ -26,6 +26,10 @@ const pluginConfigs = {
   'BTs CombatLogger': {
     basePath: 'combatlogger',
     latest: '1.1'
+  },
+  'Tubs Status Plugin': {
+    basePath: 'tubs-statusplugin',
+    latest: '1.5.2.1'
   }
 };
 

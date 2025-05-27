@@ -20,7 +20,7 @@ BT's CombatLogger is a Spigot/Paper plugin designed to discourage and punish pla
 Combat logging is a common frustration in PvP-enabled Minecraft servers. This plugin provides a straightforward solution to penalize this behavior.
 :::
 
-## Core Features ✨
+## Core Features
 
 *   **Combat Tagging:** Automatically tags players as "in combat" when they deal or receive damage from another player (excluding allies).
 *   **Configurable Combat Timer:** Set how long a player remains tagged after the last combat action.

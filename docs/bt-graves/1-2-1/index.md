@@ -22,7 +22,7 @@ Never lose your hard-earned gear to lava or despawning again! BT Graves provides
 When a player dies, instead of items scattering, a grave (represented by a player head and an invisible armor stand) is created. The player can then return to their grave to retrieve their inventory and saved XP.
 :::
 
-## Core Features ✨
+## Core Features
 
 *   **Item Preservation:** Securely stores all items from the player's main inventory, armor slots, and off-hand upon death.
 *   **XP Saving:** Saves a configurable percentage of the player's experience levels and progress.

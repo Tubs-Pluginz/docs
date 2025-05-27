@@ -9,18 +9,6 @@ hero:
     - theme: brand
       text: Join our Discord
       link: https://discord.pluginz.dev
-    - theme: alt
-      text: VelocityPteroPower
-      link: /VelocityPteroPower/latest/ 
-    - theme: alt
-      text: BT Graves
-      link: /bt-graves/latest/ 
-    - theme: alt
-      text: BT's CombatLogger
-      link: /combatlogger/latest/ 
-    - theme: alt
-      text: BT Graves
-      link: /bt-graves/latest/ 
     - theme: brand
       text: ☕ Support My Work
       link: https://www.buymeacoffee.com/tubyoub
@@ -41,6 +29,11 @@ features:
     title: BT's CombatLogger
     details: Punishes players for logging out during PvP combat.
     link: /combatlogger/latest/ 
+    linkText: Learn More
+  - icon: 🎭
+    title: Tub's Status Plugin
+    details: Allows players to set a custom status displayed in tab and above their head.
+    link: /tubs-statusplugin/latest/ 
     linkText: Learn More
   - icon: 🧩
     title: More Plugins Coming Soon!

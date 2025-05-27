@@ -63,6 +63,23 @@ const pluginConfigs: Record<string, PluginVersionConfig> = {
       { text: 'Troubleshooting', link: '/troubleshooting' },
     ],
   },
+  'TubsStatusPlugin': { // New entry for Tub's Status Plugin
+    label: "Tub's Status Plugin", // From pom.xml <name>
+    basePath: 'tubs-statusplugin', // Lowercase folder name, from plugin.yml name
+    latest: '1.5.2.1', // From pom.xml <version>
+    versions: ['1.5.2.1'],
+    sidebarItems: [
+      { text: 'Introduction', link: '/' },
+      { text: 'Installation', link: '/installation' },
+      { text: 'Configuration', link: '/configuration' },
+      { text: 'Features In-Depth', link: '/features-in-depth' }, // Renamed from core-mechanics
+      { text: 'Commands', link: '/commands' },
+      { text: 'Permissions', link: '/permissions' },
+      { text: 'Placeholders', link: '/placeholders' }, // Added for PAPI
+      { text: 'FAQ', link: '/faq' },
+      { text: 'Troubleshooting', link: '/troubleshooting' },
+    ],
+  },
 };
 
 // Generate the navigation bar
