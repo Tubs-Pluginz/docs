@@ -29,7 +29,7 @@ const pluginConfigs = {
   },
   'Tubs Status Plugin': {
     basePath: 'tubs-statusplugin',
-    latest: '1.5.2.1'
+    latest: '1.6'
   }
 };
 
