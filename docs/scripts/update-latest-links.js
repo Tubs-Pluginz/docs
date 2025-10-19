@@ -17,7 +17,7 @@ console.log('Docs directory:', docsDir);
 const pluginConfigs = {
   'VelocityPteroPower': {
     basePath: 'VelocityPteroPower',
-    latest: '0.9.4'
+    latest: '0.9.5'
   },
   'BT Graves': {
     basePath: 'bt-graves',

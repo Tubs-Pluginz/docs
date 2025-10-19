@@ -18,12 +18,13 @@ const pluginConfigs: Record<string, PluginVersionConfig> = {
   'VelocityPteroPower': {
     label: 'VelocityPteroPower',
     basePath: 'VelocityPteroPower',
-    latest: '0.9.4',
-    versions: ['0.9.4'],
+    latest: '0.9.5',
+    versions: ['0.9.4','0.9.5'],
     sidebarItems: [
       { text: 'Introduction', link: '/' },
       { text: 'Installation', link: '/installation' },
       { text: 'Configuration', link: '/configuration' },
+      { text: 'Lobbies & Limbo', link: '/lobbies-and-limbo' },
       { text: 'Core Mechanics', link: '/core-mechanics' },
       { text: 'Commands', link: '/commands' },
       { text: 'Permissions', link: '/permissions' },
